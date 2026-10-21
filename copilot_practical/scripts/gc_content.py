@@ -39,7 +39,7 @@ def main():
             print(f"Warning: skipping empty sequence for '{header}'", file=sys.stderr)
             continue
         gc_percentage = sum(base in "GCgc" for base in sequence) / len(sequence) * 100
-        print(f">{header}\t{gc_percentage:.3f}%")
+        print(f">{header}\t{gc_percentage:.2f}%")
 
 
 if __name__ == "__main__":
